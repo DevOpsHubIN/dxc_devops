@@ -16,7 +16,7 @@ service sshd restart
 
 yum install -y git ansible
 
-wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo --no-check-certificate
 
 rpm --import rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
