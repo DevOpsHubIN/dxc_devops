@@ -1,0 +1,18 @@
+---
+# tasks file for apache
+
+- name: install apache
+  yum:
+    name: httpd
+    state: present
+
+- name: copy index file
+  copy:
+    src: index.html
+    dest: /var/www/html/index.html
+
+- name: start apache service
+  service:
+    name: httpd
+    state: started
+

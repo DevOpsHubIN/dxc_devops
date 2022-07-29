@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"C:/D-Drive/DevOps_2021/devops_lab_2020/dxc_devops","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

@@ -1,0 +1,23 @@
+---
+- name: Playbook to install apache webserver
+  hosts: webservers
+
+  tasks:
+
+  - name: start apache service
+    service:
+      name: httpd
+      state: stopped
+
+  - name: remove index file
+    file:
+      path: /var/www/html/index.html
+      state: absent
+
+
+  - name: uninstall apache
+    yum:
+      name: httpd
+      state: absent
+
+...
