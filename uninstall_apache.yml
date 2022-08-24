@@ -1,6 +1,6 @@
 ---
 - name: Playbook to install apache webserver
-  hosts: webservers
+  hosts: web
 
   tasks:
 
